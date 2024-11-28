@@ -1,0 +1,99 @@
+body {
+    font-family: "Work Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: hsl(275, 100%, 97%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./assets/images/background-pattern-desktop.svg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    width: 35%;
+    padding: 50px 50px 20px 50px;
+    border-radius: 1rem; 
+    margin-top: 25vh;
+    box-shadow: 0 4px 40px 2px rgba(236, 143, 244, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.faq {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    margin-bottom: 40px;
+
+}
+
+.faq img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.faq-text {
+    position: relative;
+    top: 0%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    font-size: 55px;
+    font-weight: bold;
+
+}
+
+.collapsable-que {
+    margin-top: 0px;
+    border: none;
+    width: 100%;
+    margin: 10px 0;
+    padding: 0px 0;
+
+}
+
+.que {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.que:first-child span {
+    padding: 5px 0;
+}
+
+.que:first-child span:hover {
+    color: rgb(209, 6, 240);
+
+}
+
+.answer {
+    color: hsl(292, 16%, 49%);
+    line-height: 25px;
+    font-weight: 400;
+    display: none;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+    overflow: hidden;
+    margin-bottom: 0px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid hsl(275, 100%, 97%);
+    margin: 25px 0px 20px 0px;
+}
+
+.attribution {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align:center;
+}
